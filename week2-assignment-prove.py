@@ -1,4 +1,5 @@
 # 02 Prove: Assignment - Word Games
+# I added some italics to provide emphasis, I used a function to print my story, and I formatted the lines.
 
 # The other day, I was really in trouble. It all started when I saw a very
 # [adjective] [animal] [verb] down the hallway. "[exclamation]!" I yelled. But all
