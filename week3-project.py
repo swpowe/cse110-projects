@@ -36,7 +36,7 @@
 game = True
 
 while game:
-    choice = input("You're walking along a dark, winding road\nand you see a glowing light in the distance.\nDo you want to turn to INVESTIGATE the light \nor CONTINUE on your journey? ")
+    choice = input("You're walking along a dark, winding road\nand you see a glowing light in the distance.\nDo you want to turn to INVESTIGATE the light \nCONTINUE on your journey, or turn around and go HOME? ")
 
     if choice.lower() == "investigate":
         
@@ -129,6 +129,17 @@ while game:
             choice = input("I'm sorry, I don't understand that choice. Exiting.")
         
             game = False
+    
+    elif choice.lower() == "home":
+        choice = input("Well that's too bad. Kind of a boring night. :( \nPlay AGAIN or EXIT?)")
+        
+        if choice.lower() == "again":
+                game = True
+        elif choice.lower() == "exit":
+            game = False
+        else:
+            choice = input("I'm sorry, I don't understand that choice. Exiting.")
+            game = False 
     
     else:
         choice = input("I'm sorry, I don't understand that choice. Exiting. ")
