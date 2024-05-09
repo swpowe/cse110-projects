@@ -12,6 +12,15 @@ elif percent_grade >= 60:
     letter_grade = "D"
 else:
     letter_grade = "F"
-    
-    
+
+sign = percent_grade % 10
+if sign >= 7:
+    if letter_grade != "A":
+        if letter_grade != "F":
+            letter_grade += "+"
+elif sign <= 3:
+    if letter_grade != "A":
+        if letter_grade != "F":
+            letter_grade += "-"
+            
 print(f"Your letter grade is: {letter_grade}")
